@@ -1,0 +1,34 @@
+diff --git a/Perl_scripts/2_dynSD.pl b/Perl_scripts/2_dynSD.pl
+index acbd47e..1317fa7 100644
+--- a/Perl_scripts/2_dynSD.pl
++++ b/Perl_scripts/2_dynSD.pl
+@@ -1,19 +1,21 @@
++#!/usr/bin/env perl
+ $sd_border=2;
+ $min_dots_in_win=200;
+-print 'Enter the first Dam repeat file name (without "_reads_per_GATC_filtered.txt"):'."\n";
+-$in1=<STDIN>;
++
++#print 'Enter the first Dam repeat file name (without "_reads_per_GATC_filtered.txt"):'."\n";
++my $in1=$ARGV[0];
+ chomp $in1;
+ 
+-print 'Enter the second Dam repeat file name (without "_reads_per_GATC_filtered.txt"):'."\n";
+-$in2=<STDIN>;
++#print 'Enter the second Dam repeat file name (without "_reads_per_GATC_filtered.txt"):'."\n";
++my $in2=$ARGV[1];
+ chomp $in2;
+ 
+-print 'Enter the first Dam-X repeat file name (without "_reads_per_GATC_filtered.txt"):'."\n";
+-$in3=<STDIN>;
++#print 'Enter the first Dam-X repeat file name (without "_reads_per_GATC_filtered.txt"):'."\n";
++my $in3=$ARGV[2];
+ chomp $in3;
+ 
+-print 'Enter the second Dam-X repeat file name (without "_reads_per_GATC_filtered.txt"):'."\n";
+-$in4=<STDIN>;
++#print 'Enter the second Dam-X repeat file name (without "_reads_per_GATC_filtered.txt"):'."\n";
++my $in4=$ARGV[3];
+ chomp $in4;
+ 
+ open(DAT1, "${in1}_reads_per_GATC_filtered.txt") || die "no suchafile";

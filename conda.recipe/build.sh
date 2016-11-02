@@ -12,8 +12,5 @@ if [ ! -e ${PREFIX}/bin ]; then
     mkdir -p ${PREFIX}/bin
 fi
 
-chmod a+x Perl_scripts/*.pl
 cp Perl_scripts/*.pl ${PREFIX}/bin/
-
-# Patch 1_GATC_mapper.pl to give full path to All_GATC_list.txt
-LANG=C sed "s#All_GATC_list.txt#${PREFIX}/share/DamID-Seq/All_GATC_list.txt#" Perl_scripts/1_GATC_mapper.pl > ${PREFIX}/bin/1_GATC_mapper.pl
+chmod a+x ${PREFIX}/bin/*.pl

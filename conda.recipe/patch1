@@ -1,0 +1,12 @@
+diff --git a/Perl_scripts/1_GATC_mapper.pl b/Perl_scripts/1_GATC_mapper.pl
+index 1797a82..cbd3e75 100644
+--- a/Perl_scripts/1_GATC_mapper.pl
++++ b/Perl_scripts/1_GATC_mapper.pl
+@@ -1,5 +1,5 @@
+-print "Enter the input file name:\n";
+-$in=<STDIN>;
++#!/usr/bin/env perl
++my $in=$ARGV[0];
+ chomp $in;
+ print "\nloading data...\n";
+ open(DAT, "$in") || die "no suchafile";

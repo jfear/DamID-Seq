@@ -5,6 +5,10 @@ package:
 source:
     git_rev: d463f0d02eac
     git_url: https://github.com/Vift/DamID-Seq
+    patches:
+        - patch1
+        - patch2
+        - patch3
 
 build:
     number: 0
