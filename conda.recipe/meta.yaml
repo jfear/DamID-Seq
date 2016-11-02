@@ -1,0 +1,19 @@
+package:
+    name: damid-seq
+    version: 1.0.0
+
+source:
+    git_rev: d463f0d02eac
+    git_url: https://github.com/Vift/DamID-Seq
+
+build:
+    number: 0
+    skip: False
+
+requirements:
+    run:
+        - perl
+test:
+
+about:
+    home: https://github.com/Vift/DamID-Seq
